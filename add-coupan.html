@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Welcome To Food Delivery</title>
+      <link rel="icon"  type="image/ico" href="img/logo-modal.png">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+      <link href="css/c3.min.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+       <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+      <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+      <link href="css/mystyle-coman.css" rel="stylesheet">
+      <link href="css/admin-style.css" rel="stylesheet">
+      <link rel="stylesheet"  type="text/css" href="css/styles-dashboard.css">
+      <link href="css/media.css" rel="stylesheet">
+      <link href="css/datatables.min.css" rel="stylesheet">
+      <link href="css/daterangepicker-bs3.css" rel="stylesheet">
+      <link href="css/jquery.scrollbar.css" rel="stylesheet">
+
+   </head>
+   <body>
+      <div id="wrapper">
+         <nav class="navbar-default navbar-expand-lg  navbar-static-side left-main-menu  scrollbar-inner" role="navigation">
+            <div class="sidebar-collapse">
+               <ul class="nav metismenu" id="side-menu">
+                  <li class="nav-header">
+                     <div class="dropdown profile-element">
+                        <div class="logo-panel text-center float-n">
+                           <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                        </div>
+                     </div>
+                     <div class="logo-element">
+                        <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                     </div>
+                  </li>
+                  <li>
+                     <a href="dashboard.html" title="Dashboard"><i class="fa fa-th" style="margin-right: 0px;"></i> <span class="nav-label">Dashboard</span></a>
+                  </li>
+                  <li >
+                     <a href="users.html" title="Users"><i class="fa fa-users"></i><span class="nav-label">Users</span></a>
+                  </li>
+                  <li>
+                     <a href="chefs.html"  title="Chefs" class="d-flex-center"><i class="fa fa-user-plus" aria-hidden="true"></i><span class="nav-label m-t2">Chefs</span></a>
+                  </li>
+                  <li>
+                     <a href="subadmin.html"  title="Sub Admin" class="d-flex-center"><i class="fa fa-user" aria-hidden="true"></i><span class="nav-label">Sub Admin</span></a>
+                  </li>
+                  <li>
+                     <a href="orders.html" title="Orders" class="d-flex-center"><i class="fa fa-shopping-cart"></i><span class="nav-label">Orders</span></a>
+                  </li>
+                  <li  class="active">
+                     <a href="promocodes.html" title="PromoCodes" class="d-flex-center"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i><span class="nav-label">PromoCodes</span></a>
+                  </li>
+                  <li>
+                     <a href="rating-management.html" title="Rating Management" class="d-flex-center"><i class="fa fa-star-half-o" aria-hidden="true"></i><span class="nav-label">Rating Management</span></a>
+                  </li>
+                  <li>
+                     <a href="new-Inquiries.html" title="New  Inquiries"><i class="fa fa-bell" aria-hidden="true"></i><span class="nav-label">New  Inquiries</span></a>
+                  </li>
+                   <li>
+                     <a href="menu-categories.html" title="Menu Category"><i class="fa fa-bars" aria-hidden="true"></i><span class="nav-label">Menu Category</span></a>
+                  </li>
+                  <li>
+                     <a href="contact-us.html" title="Contact us"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="nav-label">Contact us</span></a>
+                  </li>
+                  <li>
+                     <a href="CMS-pages.html" title="CMS Pages"><i class="fa fa-file-text" aria-hidden="true"></i><span class="nav-label">CMS Pages</span></a>
+                  </li>
+                  <li>
+                     <a href="reports.html" title="Reports"><i class="fa fa-file-text-o" aria-hidden="true"></i><span class="nav-label">Reports</span></a>
+                  </li>
+                   <li>
+                     <a href="settings.html" title="Settings"><i class="fa fa-gears"></i><span class="nav-label">Settings</span></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div id="page-wrapper" class="dark-bg" style="min-height: 615px;">
+            <div class="row top-menu2">
+               <nav class="navbar navbar-static-top dark-bg-header top-menu" role="navigation" style="margin-bottom: 0">
+                  <div class="navbar-header">
+                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                  </div>
+                   <ul class="nav navbar-top-links navbar-right">
+                           <li class="user-info-box welcome tooltipa">
+                              <div class="dropdown d-flex">
+                                 <span class="prof-img">
+                                 <a href="profile.html"> <img alt="image" class="img-back" src="img/user-image.png"></a>
+                                 </span>
+                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                 <span class="clear"> <span class="block m-t-xs">
+                                 </span> <span class="text-muted text-xs block"> John<b class="caret"></b></span> </span> </a>
+                                 <ul class="dropdown-menu">
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <!--                            <li><a href="contacts.html">Contacts</a></li>-->
+                                    <li><a href="home-login.html">Logout</a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                        </ul>
+               </nav>
+            </div>
+        <div class="wrapper wrapper-content">
+               <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <div class="ibox">
+                        <div class="ibox-content">
+                           <div class="box-heading">
+                             <a href="promocodes.html">
+                                    <h2> <img src="img/back-icon.png" class="img-back">Add Promocode
+                                    </h2>
+                                 </a>
+                           </div>
+                         <!--   <div class="row m-b-sm">
+                              <div class="col-md-3">
+                                 <select class="form-control ">
+                                    <option>Account Type</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-3 ">
+                                 <div class="text-right">
+                                    <select class="form-control">
+                                       <option>Verified</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div> -->
+                          
+                            <div class="from-group text-left">
+                     <h4>Coupon Type </h4>
+                     <select class="form-control cal-input">
+                        <option>All users</option>
+                        <option>Particular sosh</option>
+                        <option>Particular activity</option>
+                     </select>
+                  </div>
+                  <div class="row">       
+            <div class="col-xs-12 col-lg-3">
+              <div class="input-group form-group field-coupon-coupon_minimum_cart_value required">
+<label for="coupon-coupon_minimum_cart_value">Minimum Cart Value</label>
+<input type="text" id="coupon-coupon_minimum_cart_value" class="form-control" name="Coupon[coupon_minimum_cart_value]" value="10" aria-required="true">
+
+<div class="help-block"></div>
+</div>            </div><!--col-xs-4-->
+            
+            <div class="col-xs-12 col-lg-3">
+              <div class="input-group form-group field-coupon-coupon_value required">
+<label for="coupon-coupon_value">Max Discount</label>
+<input type="text" id="coupon-coupon_value" class="form-control" name="Coupon[coupon_value]" value="10" aria-required="true">
+
+<div class="help-block"></div>
+</div>            </div><!--col-xs-4-->
+            
+            <div class="col-xs-12 col-lg-3">
+              <div class="input-group form-group field-coupon-coupon_code">
+<label for="coupon-coupon_code">Coupon Code</label>
+<input type="text" id="coupon-coupon_code" class="form-control" name="Coupon[coupon_code]" value="10per">
+
+<div class="help-block"></div>
+
+</div>            </div><!--col-xs-4-->
+        </div>
+
+        <div class="row">
+           <div class="col-sm-12 col-md-12 col-lg-12">
+                                 <h4>Select Date:</h4>
+                                 <div class="row">
+                                    <div class="col-sm-9 col-md-9 col-lg-9">
+                                       <div class="mb-10" id="data_5">
+                                          <!--   <label class="font-noraml">Range select</label> -->
+                                          <div class="input-daterange input-group" id="datepicker">
+                                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                             <input type="text" class="input-sm form-control" name="start" value="05/14/2014">
+                                             <span class="input-group-addon bor-left">to</span>
+                                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                             <input type="text" class="input-sm form-control" name="end" value="05/22/2014">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                       <button class="btn btn-primary with-100" type="submit" >Apply</button>
+                                    </div>
+                                 </div>
+                              </div>
+        </div>
+
+                  <div style="margin-bottom: 5px;" class="input-group form-group  field-coupon-coupon_status required success">
+<label style="margin-bottom: 5px;">Coupon Status</label><input type="hidden" name="Coupon[coupon_status]" value=""><div id="coupon-coupon_status" role="radiogroup" aria-required="true" aria-invalid="false"><input type="radio" id="coupon-coupon_status-0" class="radio" name="Coupon[coupon_status]" value="1" checked=""><label class="radio" for="coupon-coupon_status-0">Active</label>
+<input type="radio" id="coupon-coupon_status-1" class="radio" name="Coupon[coupon_status]" value="2"><label class="radio" for="coupon-coupon_status-1">Inactive</label></div><div class="help-block"></div>
+</div>
+  <div class="row">
+           <div class="col-sm-12 col-md-12 col-lg-12">  <div class=" text-left">
+                 
+                 
+                      <div class="form-group">
+                         <h4>Select Restaurants</h4>
+                        
+               <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1" style="font-size: 14px; line-height: 14px; margin-bottom: 10px;">Select All Restaurants</label>
+                <div class="">
+                <select data-placeholder="Choose a Country..." class="chosen-select" multiple style="width:100%; max-width: 600px;  " tabindex="4">
+                <option value="">Select</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Afghanistan">Afghanistan</option>
+             
+                
+              </select>
+                </div>
+                </div>
+                 </div>
+                </div>
+
+                  </div>
+                  <form runat="server">
+                        <h4>Promocode Image</h4>
+  <input type='file' id="imgInp" />
+  <img id="blah" src="img/images-banner.png" alt="your image" width="30%"  style="width: 15%; margin-top: 10px;" />
+</form>
+<div class="text-center">
+<a class="btn-primary btn" data-toggle="modal" data-dismiss="modal" data-target="#modal-add" > Save</a><a href="promocodes.html" class="btn-primary btn m-l-sm">Cencel</a>
+</div>
+                             </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          
+         </div>
+      </div>
+     <div class="modal coman-modal  fade" id="modal-update" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+               <div class="success-msg-icon">
+                  <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+               </div>
+               <h2>Updated successfully !!</h2>
+            </div>
+         </div>
+      </div>
+            <div class="modal coman-modal  fade" id="modal-add" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+         <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+               <div class="success-msg-icon">
+                  <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+               </div>
+               <h2>Added successfully !!</h2>
+            </div>
+         </div>
+      </div>
+      <!-- Mainly scripts -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+      <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <!-- Custom and plugin javascript -->
+      <script src="js/inspinia.js"></script>
+      <script src="js/plugins/pace/pace.min.js"></script>
+      <script src="js/plugins/dataTables/datatables.min.js"></script>
+     <script src="js/plugins/select2/select2.full.min.js"></script>
+       <!-- DROPZONE -->
+    <script src="js/plugins/dropzone/dropzone.js"></script>
+
+
+    <script>
+        $(document).ready(function(){
+
+            Dropzone.options.myAwesomeDropzone = {
+
+                autoProcessQueue: false,
+                uploadMultiple: true,
+                parallelUploads: 100,
+                maxFiles: 100,
+
+                // Dropzone settings
+                init: function() {
+                    var myDropzone = this;
+
+                    this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        myDropzone.processQueue();
+                    });
+                    this.on("sendingmultiple", function() {
+                    });
+                    this.on("successmultiple", function(files, response) {
+                    });
+                    this.on("errormultiple", function(files, response) {
+                    });
+                }
+
+            }
+
+       });
+    </script>
+      <!-- Chosen -->
+
+      <script src="js/plugins/chosen/chosen.jquery.js"></script>
+      <script>
+         $(document).ready(function(){
+           $('.dataTables-example').DataTable( {
+             columnDefs: [
+         { orderable: false, targets: 2 }
+         ]
+           }
+                                 );
+           /* Init DataTables */                  
+         }
+                          );
+         
+         
+         
+         /*environment.plugins.append(
+         "Provide",
+         new webpack.ProvidePlugin ({
+         $: 'jquery',
+         jQuery: 'jquery',
+         Popper: ['popper.js', 'default'],
+         Chosen: ['chosen.js', 'default']
+         })
+         )*/
+         
+         /*document.addEventListener("turbolinks:load", () => {
+         $('[data-toggle="tooltip"]').tooltip()
+         $('[data-toggle="popover"]').popover()
+         $("#course_instructor_ids").chosen()
+         })*/
+         
+         $(".select2_demo_1").select2();
+         $(".select2_demo_2").select2();
+         $(".select2_demo_3").select2({
+                   placeholder: "Select a state",
+                   allowClear: true
+         });
+         
+        function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    
+    reader.onload = function(e) {
+      $('#blah').attr('src', e.target.result);
+    }
+    
+    reader.readAsDataURL(input.files[0]); // convert to base64 string
+  }
+}
+
+$("#imgInp").change(function() {
+  readURL(this);
+});
+      </script>
+      <script type="text/javascript">
+         var config = {
+                         '.chosen-select'           : {},
+                         '.chosen-select-deselect'  : {allow_single_deselect:true},
+                         '.chosen-select-no-single' : {disable_search_threshold:10},
+                         '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+                         '.chosen-select-width'     : {width:"95%"}
+                        }
+                        
+                     for (var selector in config) {
+                         $(selector).chosen(config[selector]);
+                     }
+         
+            $('.input-group.date').datepicker(
+              {format: "dd.mm.yyyy"}
+              );
+            var datePicker = $(".calendar").datepicker({});
+            var t ;
+            $( document ).on(
+            'DOMMouseScroll mousewheel scroll',
+            '#myModal', 
+            function(){       
+              window.clearTimeout( t );
+              t = window.setTimeout( function(){            
+                  $('.calendar').datepicker('')
+              }, 100 );        
+            }
+            );
+             $('#data_5 .input-daterange').datepicker({
+                   keyboardNavigation: false,
+                   forceParse: false,
+                   autoclose: true
+               });
+            
+             
+      </script>
+      <script src="js/daterangepicker.js"></script>
+     
+      <script>
+         $(document).ready(function(){
+           $('.dataTables-example').DataTable(                       );
+           /* Init DataTables */
+           
+                            
+         }
+                          );
+         
+      </script>
+      <script src="js/scrollbar.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function(){
+         jQuery('.scrollbar-inner').scrollbar();
+         });
+         
+      </script>
+   </body>
+</html>

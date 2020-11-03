@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Welcome To Food Delivery</title>
+      <link rel="icon"  type="image/ico" href="img/logo-modal.png">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+      <link href="css/c3.min.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/mystyle-coman.css" rel="stylesheet">
+      <link href="css/admin-style.css" rel="stylesheet">
+      <link rel="stylesheet"  type="text/css" href="css/styles-dashboard.css">
+     
+      <link href="css/datatables.min.css" rel="stylesheet">
+      <link href="css/daterangepicker-bs3.css" rel="stylesheet">
+      <link href="css/jquery.scrollbar.css" rel="stylesheet">
+       <link href="css/media.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="wrapper">
+         <nav class="navbar-default navbar-expand-lg  navbar-static-side left-main-menu  scrollbar-inner" role="navigation">
+            <div class="sidebar-collapse">
+               <ul class="nav metismenu" id="side-menu">
+                  <li class="nav-header">
+                     <div class="dropdown profile-element">
+                        <div class="logo-panel text-center float-n">
+                           <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                        </div>
+                     </div>
+                     <div class="logo-element">
+                        <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                     </div>
+                  </li>
+                  <li>
+                     <a href="dashboard.html" title="Dashboard"><i class="fa fa-th" style="margin-right: 0px;"></i> <span class="nav-label">Dashboard</span></a>
+                  </li>
+                  <li  >
+                     <a href="users.html" title="Users"><i class="fa fa-users"></i><span class="nav-label">Users</span></a>
+                  </li>
+                  <li>
+                     <a href="chefs.html"  title="Chefs" class="d-flex-center"><i class="fa fa-user-plus" aria-hidden="true"></i><span class="nav-label m-t2">Chefs</span></a>
+                  </li>
+                  <li>
+                     <a href="subadmin.html"  title="Sub Admin" class="d-flex-center"><i class="fa fa-user" aria-hidden="true"></i><span class="nav-label">Sub Admin</span></a>
+                  </li>
+                  <li class="active">
+                     <a href="orders.html" title="Orders" class="d-flex-center"><i class="fa fa-shopping-cart"></i><span class="nav-label">Orders</span></a>
+                  </li>
+                  <li>
+                     <a href="promocodes.html" title="PromoCodes" class="d-flex-center"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i><span class="nav-label">PromoCodes</span></a>
+                  </li>
+                  <li>
+                     <a href="rating-management.html" title="Rating Management" class="d-flex-center"><i class="fa fa-star-half-o" aria-hidden="true"></i><span class="nav-label">Rating Management</span></a>
+                  </li>
+                  <li>
+                     <a href="new-Inquiries.html" title="New  Inquiries"><i class="fa fa-bell" aria-hidden="true"></i><span class="nav-label">New  Inquiries</span></a>
+                  </li> <li>
+                     <a href="menu-categories.html" title="Menu Category"><i class="fa fa-bars" aria-hidden="true"></i><span class="nav-label">Menu Category</span></a>
+                  </li>
+                  <li>
+                     <a href="contact-us.html" title="Contact us"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="nav-label">Contact us</span></a>
+                  </li>
+                  <li>
+                     <a href="CMS-pages.html" title="CMS Pages"><i class="fa fa-file-text" aria-hidden="true"></i><span class="nav-label">CMS Pages</span></a>
+                  </li>
+                  <li>
+                     <a href="reports.html" title="Reports"><i class="fa fa-file-text-o" aria-hidden="true"></i><span class="nav-label">Reports</span></a>
+                  </li>
+                   <li>
+                     <a href="settings.html" title="Settings"><i class="fa fa-gears"></i><span class="nav-label">Settings</span></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div id="page-wrapper" class="dark-bg" style="min-height: 615px;">
+            <div class="row top-menu2">
+               <nav class="navbar navbar-static-top dark-bg-header top-menu" role="navigation" style="margin-bottom: 0">
+                  <div class="navbar-header">
+                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                  </div>
+                  <ul class="nav navbar-top-links navbar-right">
+                           <li class="user-info-box welcome tooltipa">
+                              <div class="dropdown d-flex">
+                                 <span class="prof-img">
+                                 <a href="profile.html"> <img alt="image" class="img-back" src="img/user-image.png"></a>
+                                 </span>
+                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                 <span class="clear"> <span class="block m-t-xs">
+                                 </span> <span class="text-muted text-xs block"> John<b class="caret"></b></span> </span> </a>
+                                 <ul class="dropdown-menu">
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <!--                            <li><a href="contacts.html">Contacts</a></li>-->
+                                    <li><a href="home-login.html">Logout</a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                        </ul>
+               </nav>
+            </div>
+            <div class="wrapper wrapper-content">
+               <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <div class="ibox">
+                        <div class="ibox-content">
+                           <div class="box-heading">
+                              <h2>Orders  </h2>
+                           </div>
+                           <!--   <div class="row m-b-sm">
+                              <div class="col-md-3">
+                                 <select class="form-control ">
+                                    <option>Account Type</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-3 ">
+                                 <div class="text-right">
+                                    <select class="form-control">
+                                       <option>Verified</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              </div> -->
+                           <div class="row m-b-sm">
+                              <div class="col-sm-12 col-md-3 col-lg-3" >
+                                 <h4>Order type:</h4>
+                                 <select class="form-control ">
+                                    <option>Account Type</option>
+                                 </select>
+                              </div>
+                              <div class="col-sm-12 col-md-3 col-lg-3">
+                                 <h4>Order status:</h4>
+                                 <select class="form-control ">
+                                    <option>Account Type</option>
+                                 </select>
+                              </div>
+                              <div class="col-sm-12 col-md-12 col-lg-6">
+                                 <h4>Select Date:</h4>
+                                 <div class="row">
+                                    <div class="col-sm-9 col-md-9 col-lg-9">
+                                       <div class="mb-10" id="data_5">
+                                          <!--   <label class="font-noraml">Range select</label> -->
+                                          <div class="input-daterange input-group" id="datepicker">
+                                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                             <input type="text" class="input-sm form-control" name="start" value="05/14/2014">
+                                             <span class="input-group-addon bor-left">to</span>
+                                             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                             <input type="text" class="input-sm form-control" name="end" value="05/22/2014">
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                       <button class="btn btn-primary with-100" type="submit">Apply</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="color">
+                              <div class="colours_action">
+                                 <ul class="animated zoomIn">
+                                    <li>
+                                       <div class="icons-circle-number orange">0</div>
+                                       <h4>Pending</h4>
+                                    </li>
+                                    <li>
+                                       <div class="icons-circle-number green">0</div>
+                                       <h4>Accepted</h4>
+                                    </li>
+                                    <li>
+                                       <div class="icons-circle-number dark-green">0</div>
+                                       <h4>Delivered</h4>
+                                    </li>
+                                    <li>
+                                       <div class="icons-circle-number red">0</div>
+                                       <h4>Rejected</h4>
+                                    </li>
+                                    <li>
+                                       <div class="icons-circle-number pink">0</div>
+                                       <h4>Pick up</h4>
+                                    </li>
+                                    <li>
+                                       <div class="icons-circle-number violet">0</div>
+                                       <h4>Total</h4>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="table-responsive coman-table" id="owner-detail-btn2">
+                              <table class="table dataTables-example">
+                                 <thead>
+                                    <tr>
+                                       <th> Order Id</th>
+                                       <th>DateTime</th>
+                                       <th>Customer Name</th>
+                                          <th>Order Type</th>
+                                       <th>Order Place</th>
+                                       <th>Payment Status</th>
+                                       <th>Order Status</th>
+                                       <th>Actions</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>1446</td>
+                                       <td>26/07/2020 04:19 AM</td>
+                                       <td>John</td>
+                                       <td>Delivery</td>
+                                       <td>Dominos
+                                       </td>
+                                       <td>
+                                          Success
+                                       </td>
+                                       <td>
+                                          Preparing
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                             <a data-toggle="modal" data-target="#Edit-modal"><i class="fa fa-pencil"></i></a>                     <a  title="" data-toggle="modal" data-target="#trackDeliveryBoy"> <i class="fa fa-map-marker" ></i></a>
+                                             <a  data-toggle="modal" data-target="#printpreview"><i class="fa fa-eye" aria-hidden="true"></i></a> 
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>1446</td>
+                                       <td>26/07/2020 04:19 AM</td>
+                                       <td>John</td>
+                                       <td>Delivery</td>
+                                       <td>Dominos
+                                       </td>
+                                       <td>
+                                          Success
+                                       </td>
+                                       <td>
+                                          Preparing
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                             <a data-toggle="modal" data-target="#Edit-modal"><i class="fa fa-pencil"></i></a> 
+                                             <a  title="" data-toggle="modal" data-target="#trackDeliveryBoy"> <i class="fa fa-map-marker" ></i></a>
+                                             <a  data-toggle="modal" data-target="#printpreview"><i class="fa fa-eye" aria-hidden="true"></i></a> 
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>1446</td>
+                                       <td>26/07/2020 04:19 AM</td>
+                                       <td>John</td>
+                                       <td>Pick up</td>
+                                       <td>Dominos
+                                       </td>
+                                       <td>
+                                          Success
+                                       </td>
+                                       <td>
+                                          Preparing
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                             <a data-toggle="modal" data-target="#Edit-modala"><i class="fa fa-pencil"></i></a> 
+                                             <a  title="" data-toggle="modal" data-target=".trackDeliveryBoya"> <i class="fa fa-map-marker" ></i></a>
+                                             <a  data-toggle="modal" data-target="#printpreviewa"><i class="fa fa-eye" aria-hidden="true"></i></a> 
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>1446</td>
+                                       <td>26/07/2020 04:19 AM</td>
+                                       <td>John</td>
+                                       <td>Delivery</td>
+                                       <td>Dominos
+                                       </td>
+                                       <td>
+                                          Success
+                                       </td>
+                                       <td>
+                                          Preparing
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                             <a data-toggle="modal" data-target="#Edit-modal"><i class="fa fa-pencil"></i></a> 
+                                             <a  title="" data-toggle="modal" data-target="#trackDeliveryBoy"> <i class="fa fa-map-marker" ></i></a>
+                                             <a  data-toggle="modal" data-target="#printpreview"><i class="fa fa-eye" aria-hidden="true"></i></a> 
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>1446</td>
+                                       <td>26/07/2020 04:19 AM</td>
+                                       <td>John</td>
+                                       <td>Pick up</td>
+                                       <td>Dominos
+                                       </td>
+                                       <td>
+                                          Success
+                                       </td>
+                                       <td>
+                                          Preparing
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                             <a data-toggle="modal" data-target="#Edit-modal"><i class="fa fa-pencil"></i></a> 
+                                               <a  title="" data-toggle="modal" data-target=".trackDeliveryBoya"> <i class="fa fa-map-marker" ></i></a>
+                                             <a  data-toggle="modal" data-target="#printpreview"><i class="fa fa-eye" aria-hidden="true"></i></a> 
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>1446</td>
+                                       <td>26/07/2020 04:19 AM</td>
+                                       <td>John</td>
+                                       <td>Delivery</td>
+                                       <td>Dominos
+                                       </td>
+                                       <td>
+                                          Success
+                                       </td>
+                                       <td>
+                                          Preparing
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                             <a data-toggle="modal" data-target="#Edit-modal"><i class="fa fa-pencil"></i></a> 
+                                             <a  title="" data-toggle="modal" data-target="#trackDeliveryBoy"> <i class="fa fa-map-marker" ></i></a>
+                                             <a  data-toggle="modal" data-target="#printpreview"><i class="fa fa-eye" aria-hidden="true"></i></a> 
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>1446</td>
+                                       <td>26/07/2020 04:19 AM</td>
+                                       <td>John</td>
+                                       <td>Pick up</td>
+                                       <td>Dominos
+                                       </td>
+                                       <td>
+                                          Success
+                                       </td>
+                                       <td>
+                                          Preparing
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                             <a data-toggle="modal" data-target="#Edit-modal"><i class="fa fa-pencil"></i></a> 
+                                              <a  title="" data-toggle="modal" data-target=".trackDeliveryBoya"> <i class="fa fa-map-marker" ></i></a>
+                                             <a  data-toggle="modal" data-target="#printpreview"><i class="fa fa-eye" aria-hidden="true"></i></a> 
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal coman-modal  fade" id="Edit-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-small">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title">Order Details</h4>
+               </div>
+               <!--modal-header-->
+               <div class="modal-body">
+                  <button style="width: 150px;" id="printdel" class="btn printleft btn-primary" onclick="printDiv('printableArea')"><i class="fa fa-print" style="margin-right: 10px;"></i>Print</button>
+                  <div class="printview-order" id="printableArea">
+                     <div class="printview-order-inner">
+                        <h3 class="sub_title">Customer Details</h3>
+                      
+                        <table class="table">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <p>Full Name :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Shagul</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Mobile :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>9876543210</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Address :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Chinmaya School Main Block, Arun Nagar, Coimbatore, Tamil Nadu 641041, India,   - 641041. Additional Info: ,</p>
+                                       <p>Coimbatore,</p>
+                                       <p>India.</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                   
+                     </div>
+                       <div class="printview-order-inner">
+                        <h3 class="sub_title">Restaurant Details</h3>
+                      
+                        <table class="table">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <p>Full Name :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Shagul</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Mobile :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>9876543210</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Address :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Chinmaya School Main Block, Arun Nagar, Coimbatore, Tamil Nadu 641041, India,   - 641041. Additional Info: ,</p>
+                                       <p>Coimbatore,</p>
+                                       <p>India.</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                   
+                     </div>
+                    <div class="printview-order-inner m-b-md">
+                        <h3 class="sub_title">Add Instruction</h3>
+                     <textarea class="form-control" > add more spicy </textarea>
+                     </div>
+                     <div class="printview-order-inner order_details">
+                        <h3 class="sub_title">Order Details</h3>
+                          
+                        <table class="table ">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <p>Order ID :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>0000002</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Order Date :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>15/05/2020 10:55 AM</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Order Type :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Delivery</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Payment Option :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>COD</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Payment Status :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Success</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                  
+                      </div>
+                      
+                     <!-- overall total table -->
+                     <div class="overallTable table-responsive ">
+                        <table class="table table-striped table-bordered">
+                           <thead>
+                              <tr>
+                                 <th>S.No.</th>
+                                 <th>Item Name</th>
+                                 <th>Qty</th>
+                                 <th>Price (INR)</th>
+                                 <th>Variety - Price (INR)</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="s_no">1</td>
+                                 <td>Goat Meat</td>
+                                 <td>1</td>
+                                 <td>0.000</td>
+                                 <td class="ing">
+                                    <ul class="tbl_view">
+                                       <li>
+                                          <span class="td">  1 Kg , 2 kg (Sub Course) </span>
+                                          <span class="td lbl"> INR 30.000  </span>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                              <tr class="total_box">
+                                 <td colspan="4"></td>
+                                 <td>
+                                    <ul class="tbl_view">
+                                       <li>
+                                          <span class="td">Subtotal</span>
+                                          <span class="td lbl">INR 30.000</span>
+                                       </li>
+                                       <!--<li>
+                                          <span class="td">Delivery Fee</span>
+                                          <span class="td lbl"> </span>
+                                          </li>-->
+                                       <li>
+                                          <span class="td">Offer Value</span>
+                                          <span class="td lbl">INR 0.000</span>
+                                       </li>
+                                       <li>
+                                          <span class="td">Rider Tip </span>
+                                          <span class="td lbl">INR 0.000</span>
+                                       </li>
+                                       <li>
+                                          <span class="td">
+                                          Tax (0%) :
+                                          </span>
+                                          <span class="td lbl">INR 7.200</span>
+                                       </li>
+                                       <li>
+                                          <span class="td">Delivery Fee</span>
+                                          <span class="td lbl">INR 10.000</span>
+                                       </li>
+                                       <li class="total">
+                                          <span class="td">Total</span>
+                                          <span class="td lbl">INR 47.200</span>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                            
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <!--modal-body-->
+               <div class="modal-footer"> 
+                  <button class="btn grey btn-primary" data-dismiss="modal">Close</button>
+                  <button style="display: none;" class="btn" onclick="printDiv('printableArea')"><i class="fa fa-print"></i>Print</button>
+               </div>
+               <!--modal-footer-->
+            </div>
+            <!--modal-content-->
+         </div>
+      </div>
+        <div class="modal coman-modal  fade" id="printpreview" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-small">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title">Order Details</h4>
+               </div>
+               <!--modal-header-->
+               <div class="modal-body">
+                  <button style="width: 150px;" id="printdel" class="btn printleft btn-primary" onclick="printDiv('printableArea')"><i class="fa fa-print" style="margin-right: 10px;"></i>Print</button>
+                  <div class="printview-order" id="printableArea">
+                     <div class="printview-order-inner">
+                        <h3 class="sub_title">Customer Details</h3>
+                        <table class="table">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <p>Full Name :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Shagul</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Mobile :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>9876543210</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Address :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Chinmaya School Main Block, Arun Nagar, Coimbatore, Tamil Nadu 641041, India,   - 641041. Additional Info: ,</p>
+                                       <p>Coimbatore,</p>
+                                       <p>India.</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                         <div class="printview-order-inner">
+                        <h3 class="sub_title">Restaurant Details</h3>
+                      
+                        <table class="table">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <p>Full Name :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Shagul</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Mobile :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>9876543210</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Address :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Chinmaya School Main Block, Arun Nagar, Coimbatore, Tamil Nadu 641041, India,   - 641041. Additional Info: ,</p>
+                                       <p>Coimbatore,</p>
+                                       <p>India.</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                   
+                     </div>
+                     <div class="printview-order-inner m-b-md">
+                        <h3 class="sub_title">Add Instruction</h3>
+                     <textarea class="form-control" disabled=""> add more spicy </textarea>
+                     </div>
+                     <div class="printview-order-inner order_details">
+                        <h3 class="sub_title">Order Details</h3>
+                        <table class="table ">
+                           <tbody>
+                              <tr>
+                                 <td>
+                                    <p>Order ID :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>0000002</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Order Date :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>15/05/2020 10:55 AM</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Order Type :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Delivery</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Payment Option :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>COD</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <p>Payment Status :</p>
+                                 </td>
+                                 <td>
+                                    <b>
+                                       <p>Success</p>
+                                    </b>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <!-- overall total table -->
+                     <div class="overallTable table-responsive" id="my-tablea">
+                        <table class="table table-striped table-bordered" >
+                           <thead>
+                              <tr>
+                                 <th>S.No.</th>
+                                 <th>Item Name</th>
+                                 <th>Qty</th>
+                                 <th>Price (INR)</th>
+                                 <th>Variety - Price (INR)</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td class="s_no">1</td>
+                                 <td>Goat Meat</td>
+                                 <td>1</td>
+                                 <td>0.000</td>
+                                 <td class="ing">
+                                    <ul class="tbl_view">
+                                       <li>
+                                          <span class="td">  1 Kg , 2 kg (Sub Course) </span>
+                                          <span class="td lbl"> INR 30.000  </span>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                              <tr class="total_box">
+                                 <td colspan="4"></td>
+                                 <td>
+                                    <ul class="tbl_view">
+                                       <li>
+                                          <span class="td">Subtotal</span>
+                                          <span class="td lbl">INR 30.000</span>
+                                       </li>
+                                       <!--<li>
+                                          <span class="td">Delivery Fee</span>
+                                          <span class="td lbl"> </span>
+                                          </li>-->
+                                       <li>
+                                          <span class="td">Offer Value</span>
+                                          <span class="td lbl">INR 0.000</span>
+                                       </li>
+                                       <li>
+                                          <span class="td">Rider Tip</span>
+                                          <span class="td lbl">INR 0.000</span>
+                                       </li>
+                                       <li>
+                                          <span class="td">
+                                          Tax (0%) :
+                                          </span>
+                                          <span class="td lbl">INR 7.200</span>
+                                       </li>
+                                       <li>
+                                          <span class="td">Delivery Fee</span>
+                                          <span class="td lbl">INR 10.000</span>
+                                       </li>
+                                       <li class="total">
+                                          <span class="td">Total</span>
+                                          <span class="td lbl">INR 47.200</span>
+                                       </li>
+                                    </ul>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="2">
+                                    <b>Allergy?</b>
+                                 </td>
+                                 <td colspan="3" style="text-align:left;">
+                                    <span>
+                                    <b style="color:#ffffff;background-color:#ff0000;">Yes</b>
+                                    </span>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="2">
+                                    <b>Order Comments:</b>
+                                 </td>
+                                 <td colspan="3" style="text-align:left;">
+                                    <span> </span>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <!--modal-body-->
+               <div class="modal-footer"> 
+                  <button class="btn grey" data-dismiss="modal">Close</button>
+                  <button style="display: none;" class="btn" onclick="printDiv('printableArea')"><i class="fa fa-print"></i>Print</button>
+               </div>
+               <!--modal-footer-->
+            </div>
+            <!--modal-content-->
+         </div>
+      </div>
+   
+      <div class="modal coman-modal  fade" id="trackDeliveryBoy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button onclick="myStopFunction()" type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title">Tracking Order</h4>
+                  <input type="hidden" id="track_order_key" name="track_order_key" value="47j47u2jt6jnxluu">
+               </div>
+               <!--modal-header-->
+               <div class="modal-body" style="">
+                  <div class="form_header">
+                     <h1>Order Information:</h1>
+                  </div>
+                  <div class="row ">
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="detail-title-a">
+                           <p><span> Order Number:</span>0000018</p>
+                           <p><span>Order Date: </span>26/07/2020</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="detail-title-a">
+                           <p><span>Order Total:  </span>INR 109.000</p>
+                           <p><span>Order Time:</span>04:19 AM</p>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="form_header">
+                  <h1>Order Tracking</h1>
+               </div>
+               <div class="kyc-top-bar clearfix">
+                  <ul>
+                     <li class="current">
+                        <div class="box">
+                           <div class="icon ic-1"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Pending</p>
+                       
+                     </li>
+                     <li class="current">
+                        <div class="box">
+                           <div class="icon ic-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Accepted</p>
+                       
+                     </li>
+                     <li>
+                        <div class="box">
+                           <div class="icon ic-3"><i class="fa fa-motorcycle" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Ready to Pickup</p>
+                       
+                     </li>
+                     <li>
+                        <div class="box">
+                           <div class="icon ic-3"><i class="fa fa-motorcycle" aria-hidden="true"></i></div>
+                        </div>
+                        <p>On the way to Pick up</p>
+                      
+                     </li>
+                      <li>
+                        <div class="box">
+                           <div class="icon ic-3"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Picked up</p>
+                      
+                     </li>
+                      <li>
+                        <div class="box">
+                           <div class="icon ic-3"><i class="fa fa-motorcycle" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Onthe way to Delivey</p>
+                      
+                     </li>
+                      <li>
+                        <div class="box">
+                           <div class="icon ic-3"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Delivered</p>
+                      
+                     </li>
+                  </ul>
+               </div>
+               <div class="track_ship_flow">
+               </div>
+               <!--modal-body-->
+               <div class="modal-footer">
+                  <button onclick="myStopFunction()" id="close-assign_order" class="btn grey btn-primary" style="max-width: 150px;" data-dismiss="modal">Cancel</button>
+               </div>
+               <!--modal-footer -->
+            </div>
+            <!--modal-content-->
+         </div>
+      </div>
+        <div class="modal coman-modal  trackDeliveryBoya fade" id="trackDeliveryBoy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button onclick="myStopFunction()" type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title">Tracking Order</h4>
+                  <input type="hidden" id="track_order_key" name="track_order_key" value="47j47u2jt6jnxluu">
+               </div>
+               <!--modal-header-->
+               <div class="modal-body" style="">
+                  <div class="form_header">
+                     <h1>Order Information:</h1>
+                  </div>
+                  <div class="row ">
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="detail-title-a">
+                           <p><span> Order Number:</span>0000018</p>
+                           <p><span>Order Date: </span>26/07/2020</p>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="detail-title-a">
+                           <p><span>Order Total:  </span>INR 109.000</p>
+                           <p><span>Order Time:</span>04:19 AM</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="form_header">
+                  <h1>Order Tracking</h1>
+               </div>
+               <div class="kyc-top-bar clearfix">
+                  <ul>
+                     <li class="current">
+                        <div class="box">
+                           <div class="icon ic-1"><i class="fa fa-download" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Pending</p>
+                       
+                     </li>
+                     <li class="current">
+                        <div class="box">
+                           <div class="icon ic-2"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Accepted</p>
+                       
+                     </li>
+                     <li>
+                        <div class="box">
+                           <div class="icon ic-3"><i class="fa fa-motorcycle" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Ready to Pickup</p>
+                       
+                     </li>
+                   
+                      <li>
+                        <div class="box">
+                           <div class="icon ic-3"><i class="fa fa-check" aria-hidden="true"></i></div>
+                        </div>
+                        <p>Picked up</p>
+                      
+                     </li>
+                     
+                  </ul>
+               </div>
+               <div class="track_ship_flow">
+               </div>
+               <!--modal-body-->
+               <div class="modal-footer">
+                  <button onclick="myStopFunction()" id="close-assign_order" class="btn grey btn-primary" style="max-width: 150px;" data-dismiss="modal">Cancel</button>
+               </div>
+               <!--modal-footer -->
+            </div>
+            <!--modal-content-->
+         </div>
+      </div>
+      <!-- Mainly scripts -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+      <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <!-- Custom and plugin javascript -->
+      <script src="js/inspinia.js"></script>
+      <script src="js/plugins/pace/pace.min.js"></script>
+      <script src="js/plugins/dataTables/datatables.min.js"></script>
+      <!-- d3 and c3 charts -->
+      <script src="js/d3.min.js"></script>
+      <script src="js/c3.min.js"></script>
+      <!-- Date range picker -->
+      <script src="js/daterangepicker.js"></script>
+  
+      <script>
+         $(document).ready(function(){
+           $('.dataTables-example').DataTable(                       );
+           /* Init DataTables */
+           
+                            
+         }
+                          );
+         
+      </script>
+      <script src="js/scrollbar.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function(){
+         jQuery('.scrollbar-inner').scrollbar();
+         });
+         
+      </script>
+      <script type="text/javascript">
+         $('.input-group.date').datepicker(
+           {format: "dd.mm.yyyy"}
+           );
+         var datePicker = $(".calendar").datepicker({});
+         var t ;
+         $( document ).on(
+         'DOMMouseScroll mousewheel scroll',
+         '#myModal', 
+         function(){       
+           window.clearTimeout( t );
+           t = window.setTimeout( function(){            
+               $('.calendar').datepicker('')
+           }, 100 );        
+         }
+         );
+          $('#data_5 .input-daterange').datepicker({
+                keyboardNavigation: false,
+                forceParse: false,
+                autoclose: true
+            });
+         
+          
+      </script>
+   </body>
+</html>

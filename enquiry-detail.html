@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Welcome To Food Delivery</title>
+      <link rel="icon"  type="image/ico" href="img/logo-modal.png">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+      <link href="css/c3.min.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/mystyle-coman.css" rel="stylesheet">
+      <link href="css/admin-style.css" rel="stylesheet">
+      <link rel="stylesheet"  type="text/css" href="css/styles-dashboard.css">
+      <link href="css/media.css" rel="stylesheet">
+      <link href="css/datatables.min.css" rel="stylesheet">
+      <link href="css/daterangepicker-bs3.css" rel="stylesheet">
+      <link href="css/jquery.scrollbar.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="wrapper">
+         <nav class="navbar-default navbar-expand-lg  navbar-static-side left-main-menu  scrollbar-inner" role="navigation">
+            <div class="sidebar-collapse">
+               <ul class="nav metismenu" id="side-menu">
+                  <li class="nav-header">
+                     <div class="dropdown profile-element">
+                        <div class="logo-panel text-center float-n">
+                           <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                        </div>
+                     </div>
+                     <div class="logo-element">
+                        <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                     </div>
+                  </li>
+                  <li>
+                     <a href="dashboard.html" title="Dashboard"><i class="fa fa-th" style="margin-right: 0px;"></i> <span class="nav-label">Dashboard</span></a>
+                  </li>
+                  <li>
+                     <a href="users.html" title="Users"><i class="fa fa-users"></i><span class="nav-label">Users</span></a>
+                  </li>
+                  <li   >
+                     <a href="chefs.html"  title="Chefs" class="d-flex-center"><i class="fa fa-user-plus" aria-hidden="true"></i><span class="nav-label m-t2">Chefs</span></a>
+                  </li>
+                  <li>
+                     <a href="subadmin.html"  title="Sub Admin" class="d-flex-center"><i class="fa fa-user" aria-hidden="true"></i><span class="nav-label">Sub Admin</span></a>
+                  </li>
+                  <li>
+                     <a href="orders.html" title="Orders" class="d-flex-center"><i class="fa fa-shopping-cart"></i><span class="nav-label">Orders</span></a>
+                  </li>
+                  <li>
+                     <a href="promocodes.html" title="PromoCodes" class="d-flex-center"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i><span class="nav-label">PromoCodes</span></a>
+                  </li>
+                  <li>
+                     <a href="rating-management.html" title="Rating Management" class="d-flex-center"><i class="fa fa-star-half-o" aria-hidden="true"></i><span class="nav-label">Rating Management</span></a>
+                  </li>
+                  <li class="active">
+                     <a href="new-Inquiries.html" title="New  Inquiries"><i class="fa fa-bell" aria-hidden="true"></i><span class="nav-label">New  Inquiries</span></a>
+                  </li> <li>
+                     <a href="menu-categories.html" title="Menu Category"><i class="fa fa-bars" aria-hidden="true"></i><span class="nav-label">Menu Category</span></a>
+                  </li>
+                  <li>
+                     <a href="contact-us.html" title="Contact us"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="nav-label">Contact us</span></a>
+                  </li>
+                  <li>
+                     <a href="CMS-pages.html" title="CMS Pages"><i class="fa fa-file-text" aria-hidden="true"></i><span class="nav-label">CMS Pages</span></a>
+                  </li>
+                  <li>
+                     <a href="reports.html" title="Reports"><i class="fa fa-file-text-o" aria-hidden="true"></i><span class="nav-label">Reports</span></a>
+                  </li>
+                   <li>
+                     <a href="settings.html" title="Settings"><i class="fa fa-gears"></i><span class="nav-label">Settings</span></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div id="page-wrapper" class="dark-bg" style="min-height: 615px;">
+            <div class="row top-menu2">
+               <nav class="navbar navbar-static-top dark-bg-header top-menu" role="navigation" style="margin-bottom: 0">
+                  <div class="navbar-header">
+                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                  </div>
+                 <ul class="nav navbar-top-links navbar-right">
+                           <li class="user-info-box welcome tooltipa">
+                              <div class="dropdown d-flex">
+                                 <span class="prof-img">
+                                 <a href="profile.html"> <img alt="image" class="img-back" src="img/user-image.png"></a>
+                                 </span>
+                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                 <span class="clear"> <span class="block m-t-xs">
+                                 </span> <span class="text-muted text-xs block"> John<b class="caret"></b></span> </span> </a>
+                                 <ul class="dropdown-menu">
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <!--                            <li><a href="contacts.html">Contacts</a></li>-->
+                                    <li><a href="home-login.html">Logout</a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                        </ul>
+               </nav>
+            </div>
+            <div class="wrapper wrapper-content ecommerce" id="user-details">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div class="ibox-content" id="tab-costum">
+                        <div class="box-heading">
+                           <div class="row ">
+                              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                 <a href="new-Inquiries.html">
+                                    <h2> <img src="img/back-icon.png" class="img-back">View Inquiry 
+                                    </h2>
+                                 </a>
+                              </div>
+                              <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <!--  <div class="box-upper text-right ">Manage Access: <span style="margin-right: 10px;"><span class="active">Active</span> / <span class="deactive">Deactive</span></span><label class="switch">
+                                    <input type="checkbox" checked="">
+                                    <span class="slider round"></span></label> -->
+                                    <div class="text-right m-t-sm "> <a class="btn btn-primary m-l-sm" data-toggle="modal" data-target="#modal-successa">Approve</a> <a class="btn btn-default m-l-sm" data-toggle="modal" data-target="#modal-delete">Reject</a></div>
+                                 </div>
+                              </div>
+                           </div>
+
+                           <div class="tabs-container" id="tab-new">
+                              <ul class="nav nav-tabs">
+                                 <li class="active"><a data-toggle="tab" href="#tab-1"> Personal Details:</a></li>
+                                 <li class=""><a data-toggle="tab" href="#tab-2"> Banking Details</a></li>
+                                 <li class=""><a data-toggle="tab" href="#tab-3">  Resturant Details</a></li>
+                                 <!-- <li class=""><a data-toggle="tab" href="#tab-4">  Payout Details</a></li> -->
+                              </ul>
+                              <div class="tab-content">
+                                 <div id="tab-1" class="tab-pane active">
+                                    <div class="panel-body">
+                                       <div class="border-solid">
+                                          <div class="row">
+                                             <div class="col-md-12">
+                                                <div class="row ">
+                                                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                      <div class="detail-title-a">
+                                                         <p><span> Name:</span>John Doue</p>
+                                                         <p><span>Email Id:</span>john@example.com</p>
+                                                        <!--  <p><span>Status:</span><label class="switch">
+                                                            <input type="checkbox" checked="">
+                                                            <span class="slider round"></span></label>
+                                                         </p> -->
+                                                      </div>
+                                                   </div>
+                                                   <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                      <div class="detail-title-a">
+                                                         <p><span>Contact Number:  </span>1234567890</p>
+                                                         <p><span>Address:</span> Mullai Nagar, Coimbatore, India  </p>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div id="tab-2" class="tab-pane">
+                                    <div class="panel-body">
+                                       <div class="row">
+                                          <div class="col-md-12">
+                                             <div class="row ">
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                   <div class="detail-title-a">
+                                                      <p><span>Bank Name:</span>HDFC</p>
+                                                      <p><span>Account Holder:</span>John</p>
+                                                      <p><span>GST:</span>12334556667
+                                                      </p>
+                                                   </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                   <div class="detail-title-a">
+                                                      <p><span>Account No:  </span>1234567890</p>
+                                                      <p><span>IFSC Code:</span> HDFC00045656  </p>
+                                                      <p><span>SWIFT Code:</span>  HDFC00045656  </p>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div id="tab-3" class="tab-pane">
+                                    <div class="panel-body">
+                                       <div class="row ">
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                             <div class="detail-title-a">
+                                                <p><span> Name:</span>Nini</p>
+                                                <p><span>Contact Number:  </span>1234567890</p>
+                                                <!-- <p><span>Accepting Orders:</span><label class="switch">
+                                                   <input type="checkbox" checked="">
+                                                   <span class="slider round"></span></label>
+                                                </p> -->
+                                                  <p><span>Description:  </span>1234567890</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                             <div class="detail-title-a">
+                                              
+                                                <p><span>Opening Hours:</span> 10:00 to 7:00 </p>
+                                                <p><span>Opening Days:</span> 7days  </p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                        <div class="detail-title-a section1  p-b-20">
+                                          <div class="box-heading">
+                                             <h2 class="p-t-lg m-b-md img-bot" style="margin-bottom: 10px;">Media <!-- <button class="btn btn-primary"><i class="fa fa-plus"></i></button> --></h2>
+                                          </div>
+                                          <div class="row" id="kyc-doc">
+                                             <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6" >
+                                                <div class="box">
+                                                   <img src="img/docs-img1.jpg" alt="" class="myImg" >
+                                                   <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </div>
+                                             </div>
+                                             <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6" >
+                                                <div class="box">
+                                                   <img src="img/docs-img1.jpg" alt="" class="myImg" >
+                                                   <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </div>
+                                             </div>
+                                             <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6" >
+                                                <div class="box">
+                                                   <img src="img/docs-img1.jpg" alt="" class="myImg" >
+                                                   <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </div>
+                                             </div>
+                                             <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6" >
+                                                <div class="box">
+                                                   <img src="img/docs-img1.jpg" alt="" class="myImg" >
+                                                   <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    <div class="detail-title-a section1  p-b-20">
+                                          <div class="box-heading">
+                                             <h2 class="p-t-lg m-b-md img-bot" style="margin-bottom: 10px;">Legal Documents <!-- <button class="btn btn-primary"><i class="fa fa-plus"></i></button> --></h2>
+                                          </div>
+                                          <div class="row" id="kyc-doc">
+                                             <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6" >
+                                                <div class="box">
+                                                   <img src="img/docs-img1.jpg" alt="" class="myImg" >
+                                                   <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </div>
+                                             </div>
+                                             <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6" >
+                                                <div class="box">
+                                                   <img src="img/docs-img1.jpg" alt="" class="myImg" >
+                                                   <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </div>
+                                             </div>
+                                             <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6" >
+                                                <div class="box">
+                                                   <img src="img/docs-img1.jpg" alt="" class="myImg" >
+                                                   <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </div>
+                                             </div>
+                                             <div class="col-lg-2 col-md-4 col-sm-3 col-xs-6" >
+                                                <div class="box">
+                                                   <img src="img/docs-img1.jpg" alt="" class="myImg" >
+                                                   <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                     
+                                       <div class="row" id="tab-costuma">
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                                             <div class="detail-title-a">
+                                                <p><span> Delivery Charge - Base Km:</span>5</p>
+                                                <p><span>Payment Options:  </span>
+                                                    <div class="d-block">    
+                                                   <input type="radio" id="male" name="gender" value="COD">
+                                                   <label for="male">COD</label></div>
+                                                 <div class="d-block">       <input type="radio" id="female" name="gender" value="Online">
+                                                   <label for="female">Online</label></div>
+                                                   <div class="d-block">     <input type="radio" id="other" name="gender" value="Both">
+                                                   <label for="other">Both</label></div>  
+                                                </p>
+                                               
+                                                </p>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                                             <div class="detail-title-a">
+                                                <p><span> Delivery Charge - Base Price:</span>525</p>
+                                              <p><span>Accept Order Type:  </span>
+                                              <div class="d-block">     <input type="radio" id="male" name="gender" value="COD">
+                                                   <label for="male">Pick Up Only</label></div>
+                                                  <div class="d-block"> <input type="radio" id="female" name="gender" value="Online">  
+                                                   <label for="female">Delivery Only</label></div>
+                                                <div class="d-block">   <input type="radio" id="other" name="gender" value="Both">
+                                                   <label for="other">Both</label></div>
+                                                </p>
+                                             
+                                             </div>
+                                          </div>
+                                       </div>
+                                         <div class="row"  id="tab-costuma">
+                                          <h2 class="detail-title-a" style="margin-left: 10px;">Pickup &amp;  Schedule</h2>
+                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                                             <div class="detail-title-a">
+                                                <p><span> Pickup:</span>Monday, Tuesday & Wednesday</p>
+                                               
+                                                <p><span>Custom Pickup:</span>Every Monday & Wednesday between 8 to 12 PM
+                                                </p>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                                             <div class="detail-title-a">
+                                                <p><span> Pickup Options:</span>30-40mins</p>
+                                             
+                                              
+                                                </p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                           <div class="row"  id="tab-costuma">
+                                          <h2 class="detail-title-a" style="margin-left: 10px;">Delivery Schedule</h2>
+                                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                                             <div class="detail-title-a">
+                                                <p><span> Delivery:</span>Monday, Tuesday & Wednesday</p>
+                                               
+                                                <p><span>Custom Delivery:</span>Every Monday & Wednesday between 8 to 12 PM
+                                                </p>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                                             <div class="detail-title-a">
+                                                <p><span> Delivery Options:</span>30-40mins</p>
+                                             
+                                              
+                                                </p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                             <div class="row" id="tab-costuma">
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                                             <div class="detail-title-a">
+                                            
+                                                <p><span>Latitude:</span>24.123456
+                                                </p>
+                                             </div>
+                                          </div>
+                                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+                                             <div class="detail-title-a">
+                                             
+                                                <p><span>Longtitude:</span>24.123456
+                                                </p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div id="img-a"><img src="img/googlemap.png" width="100%"></div>
+                                    </div>
+                                 </div>
+                                
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal coman-modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+               <h3>Are you sure you want to Reject?</h3>
+               <textarea class="form-control" placeholder="Enter Reason Here"></textarea>
+               <div class="clearfix m-t-md">
+                  <button type="submit" class="btn   btn-default m-r-sm" data-dismiss="modal" >No</button>
+                  <button type="submit" class="btn btn-primary"  data-toggle="modal" data-dismiss="modal" data-target="#modal-successb">Yes</button>
+               </div>
+            </div>
+         </div>
+      </div>
+        <div class="modal coman-modal  fade" id="modal-rejecta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+         <div class="modal-dialog  modal-a" role="document">
+            <div class="modal-content text-center">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+               <div class="success-msg-icon">
+                  <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+               </div>
+               <h2> Approved successfully !!</h2>
+            </div>
+         </div>
+      </div>
+      <div class="modal coman-modal  fade" id="modal-successb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+         <div class="modal-dialog  modal-a" role="document">
+            <div class="modal-content text-center">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+               <div class="success-msg-icon">
+                  <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+               </div>
+               <h2> Rejected successfully !!</h2>
+            </div>
+         </div>
+      </div>
+      <div class="modal coman-modal  fade" id="modal-successa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+         <div class="modal-dialog  modal-a" role="document">
+            <div class="modal-content text-center">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+               <div class="success-msg-icon">
+                  <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+               </div>
+               <h2> Approved successfully !!</h2>
+            </div>
+         </div>
+      </div>
+      <!-- IMAGE MODAL -->
+      <div id="myModal" class="modal kyc myModal">
+         <span class="close cursor" onclick="closeModal()">&times;</span>
+         <img class="modal-content-A img01" >
+         <!-- <div id="caption"></div> -->
+      </div>
+      <!-- Mainly scripts -->
+      <!-- Mainly scripts -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+      <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <!-- Custom and plugin javascript -->
+      <script src="js/inspinia.js"></script>
+      <script src="js/plugins/pace/pace.min.js"></script>
+      <script src="js/plugins/dataTables/datatables.min.js"></script>
+      <!-- Date range picker -->
+      <script src="js/daterangepicker.js"></script>
+     
+      <script>
+         $(document).ready(function(){
+           $('.dataTables-example').DataTable( );    }
+                          );
+         
+      </script>
+      <script src="js/scrollbar.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function(){
+         jQuery('.scrollbar-inner').scrollbar();
+         });
+         
+      </script>
+      <script type="text/javascript">
+         // Get the modal
+         var modal = document.getElementsByClassName("myModal");
+         
+         // Get the image and insert it inside the modal - use its "alt" text as a caption
+         var img = document.getElementsByClassName("myImg");
+         var modalImg = document.getElementsByClassName("img01");
+         // var captionText = document.getElementById("caption");
+         for(var i = 0; i < img.length; i++) {
+           img[i].onclick = function(){
+             modal[0].style.display = "block";
+             modalImg[0].src = this.src;
+             // captionText.innerHTML = this.alt;
+           }
+         }
+         
+         // Get the <span> element that closes the modal
+         function openModal() {
+           document.getElementsByClassName('myModal').style.display = "block";
+         }
+         
+         function closeModal() {
+           document.getElementsByClassName('myModal')[0].style.display = "none";
+         }
+      </script>
+   </body>
+</html>

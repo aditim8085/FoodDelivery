@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Welcome To Food Delivery</title>
+      <link rel="icon"  type="image/ico" href="img/logo-modal.png">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+      <link href="css/c3.min.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/mystyle-coman.css" rel="stylesheet">
+      <link href="css/admin-style.css" rel="stylesheet">
+      <link rel="stylesheet"  type="text/css" href="css/styles-dashboard.css">
+      <link href="css/media.css" rel="stylesheet">
+      <link href="css/datatables.min.css" rel="stylesheet">
+      <link href="css/daterangepicker-bs3.css" rel="stylesheet">
+      <link href="css/jquery.scrollbar.css" rel="stylesheet">
+   </head>
+   <body>
+      <div id="wrapper">
+         <nav class="navbar-default navbar-expand-lg  navbar-static-side left-main-menu  scrollbar-inner" role="navigation">
+            <div class="sidebar-collapse">
+               <ul class="nav metismenu" id="side-menu">
+                  <li class="nav-header">
+                     <div class="dropdown profile-element">
+                        <div class="logo-panel text-center float-n">
+                           <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                        </div>
+                     </div>
+                     <div class="logo-element">
+                        <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                     </div>
+                  </li>
+                  <li>
+                     <a href="dashboard.html" title="Dashboard"><i class="fa fa-th" style="margin-right: 0px;"></i> <span class="nav-label">Dashboard</span></a>
+                  </li>
+                  <li >
+                     <a href="users.html" title="Users"><i class="fa fa-users"></i><span class="nav-label">Users</span></a>
+                  </li>
+                  <li>
+                     <a href="chefs.html"  title="Chefs" class="d-flex-center"><i class="fa fa-user-plus" aria-hidden="true"></i><span class="nav-label m-t2">Chefs</span></a>
+                  </li>
+                  <li>
+                     <a href="subadmin.html"  title="Sub Admin" class="d-flex-center"><i class="fa fa-user" aria-hidden="true"></i><span class="nav-label">Sub Admin</span></a>
+                  </li>
+                  <li>
+                     <a href="orders.html" title="Orders" class="d-flex-center"><i class="fa fa-shopping-cart"></i><span class="nav-label">Orders</span></a>
+                  </li>
+                  <li  class="active">
+                     <a href="promocodes.html" title="PromoCodes" class="d-flex-center"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i><span class="nav-label">PromoCodes</span></a>
+                  </li>
+                  <li>
+                     <a href="rating-management.html" title="Rating Management" class="d-flex-center"><i class="fa fa-star-half-o" aria-hidden="true"></i><span class="nav-label">Rating Management</span></a>
+                  </li>
+                  <li>
+                     <a href="new-Inquiries.html" title="New  Inquiries"><i class="fa fa-bell" aria-hidden="true"></i><span class="nav-label">New  Inquiries</span></a>
+                  </li> <li>
+                     <a href="menu-categories.html" title="Menu Category"><i class="fa fa-bars" aria-hidden="true"></i><span class="nav-label">Menu Category</span></a>
+                  </li>
+                  <li>
+                     <a href="contact-us.html" title="Contact us"><i class="fa fa-envelope-o" aria-hidden="true"></i><span class="nav-label">Contact us</span></a>
+                  </li>
+                  <li>
+                     <a href="CMS-pages.html" title="CMS Pages"><i class="fa fa-file-text" aria-hidden="true"></i><span class="nav-label">CMS Pages</span></a>
+                  </li>
+                  <li>
+                     <a href="reports.html" title="Reports"><i class="fa fa-file-text-o" aria-hidden="true"></i><span class="nav-label">Reports</span></a>
+                  </li>
+                   <li>
+                     <a href="settings.html" title="Settings"><i class="fa fa-gears"></i><span class="nav-label">Settings</span></a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+         <div id="page-wrapper" class="dark-bg" style="min-height: 615px;">
+            <div class="row top-menu2">
+               <nav class="navbar navbar-static-top dark-bg-header top-menu" role="navigation" style="margin-bottom: 0">
+                  <div class="navbar-header">
+                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                  </div>
+                <ul class="navbar-right">
+                           <li class="user-info-box welcome tooltipa">
+                              <div class="dropdown d-flex">
+                                 <span class="prof-img">
+                                 <a href="profile.html"> <img alt="image" class="img-back" src="img/user-image.png"></a>
+                                 </span>
+                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                 <span class="clear"> <span class="block m-t-xs">
+                                 </span> <span class="text-muted text-xs block"> John<b class="caret"></b></span> </span> </a>
+                                 <ul class="dropdown-menu">
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <!--                            <li><a href="contacts.html">Contacts</a></li>-->
+                                    <li><a href="home-login.html">Logout</a></li>
+                                 </ul>
+                              </div>
+                           </li>
+                        </ul>
+               </nav>
+            </div>
+        <div class="wrapper wrapper-content">
+               <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <div class="ibox">
+                        <div class="ibox-content">
+                           <div class="box-heading">
+                              <h2>Promocodes  </h2>
+                           </div>
+                         <!--   <div class="row m-b-sm">
+                              <div class="col-md-3">
+                                 <select class="form-control ">
+                                    <option>Account Type</option>
+                                 </select>
+                              </div>
+                              <div class="col-md-3 ">
+                                 <div class="text-right">
+                                    <select class="form-control">
+                                       <option>Verified</option>
+                                    </select>
+                                 </div>
+                              </div>
+                           </div> -->
+                           <div class="text-right  d-flex-right"> 
+                           <button type="submit" class="btn btn-primary m-l-sm m-b-md"  onclick="window.location.href='add-coupan.html'">Add  Coupan</button>
+                        </div>
+                             <div class="table-responsive coman-table" id="owner-detail-btn">
+                              <table class="table dataTables-example">
+                                 <thead>
+                                    <tr>
+                                    <!--    <th> User Id</th> -->
+                                       <th>Couponname</th>
+                                       
+                                       <th>Coupontype</th>
+                                       <th>Minimum cart value</th>
+                                            <th>Start datetime</th>
+                                       <th>End datetime</th>
+                                       <th>Status</th>
+                                       <th>Actions</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                      
+                                       <td>15perc</td>
+                                 
+                                       <td>flat</td>
+                                       <td>100</td>
+                                     <td>18/07/2020</td>
+                                       <td>20/7/2020</td>
+                                    
+                                       <td><label class="switch">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                          </label>
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                            <a href="Edit-coupan.html" ><i class="fa fa-pencil"></i></a>
+                                           <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                       <tr>
+                                      
+                                       <td>15perc</td>
+                                 
+                                       <td>flat</td>
+                                       <td>100</td>
+                                     <td>18/07/2020</td>
+                                       <td>20/7/2020</td>
+                                    
+                                       <td><label class="switch">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                          </label>
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                            <a href="Edit-coupan.html" ><i class="fa fa-pencil"></i></a>
+                                           <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                      <tr>
+                                      
+                                       <td>15perc</td>
+                                 
+                                       <td>flat</td>
+                                       <td>100</td>
+                                     <td>18/07/2020</td>
+                                       <td>20/7/2020</td>
+                                    
+                                       <td><label class="switch">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                          </label>
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                            <a href="Edit-coupan.html" ><i class="fa fa-pencil"></i></a>
+                                           <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                      <tr>
+                                      
+                                       <td>15perc</td>
+                                 
+                                       <td>flat</td>
+                                       <td>100</td>
+                                     <td>18/07/2020</td>
+                                       <td>20/7/2020</td>
+                                    
+                                       <td><label class="switch">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                          </label>
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                            <a href="Edit-coupan.html" ><i class="fa fa-pencil"></i></a>
+                                           <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                      <tr>
+                                      
+                                       <td>15perc</td>
+                                 
+                                       <td>flat</td>
+                                       <td>100</td>
+                                     <td>18/07/2020</td>
+                                       <td>20/7/2020</td>
+                                    
+                                       <td><label class="switch">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                          </label>
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                            <a href="Edit-coupan.html" ><i class="fa fa-pencil"></i></a>
+                                           <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                      <tr>
+                                      
+                                       <td>15perc</td>
+                                 
+                                       <td>flat</td>
+                                       <td>100</td>
+                                     <td>18/07/2020</td>
+                                       <td>20/7/2020</td>
+                                    
+                                       <td><label class="switch">
+                                          <input type="checkbox" checked>
+                                          <span class="slider round"></span>
+                                          </label>
+                                       </td>
+                                       <td>
+                                          <div class="action-btn">
+                                            <a href="Edit-coupan.html" ><i class="fa fa-pencil"></i></a>
+                                           <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          
+         </div>
+      </div>
+     <div class="modal coman-modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content text-center">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+               <h3>Are you sure you want to Delete?</h3>
+               <div class="clearfix">
+                  <button type="submit" class="btn   btn-default m-r-sm" data-dismiss="modal" >No</button>
+                  <button type="submit" class="btn btn-primary"  data-toggle="modal" data-dismiss="modal" data-target="#modal-success">Yes</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal coman-modal  fade" id="modal-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+         <div class="modal-dialog  modal-a" role="document">
+            <div class="modal-content text-center">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+               </button>
+               <div class="success-msg-icon">
+                  <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+               </div>
+               <h2> Deleted successfully !!</h2>
+            </div>
+         </div>
+      </div>
+      <!-- Mainly scripts -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+      <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <!-- Custom and plugin javascript -->
+      <script src="js/inspinia.js"></script>
+      <script src="js/plugins/pace/pace.min.js"></script>
+      <script src="js/plugins/dataTables/datatables.min.js"></script>
+      <!-- d3 and c3 charts -->
+      <script src="js/d3.min.js"></script>
+      <script src="js/c3.min.js"></script>
+      <!-- Date range picker -->
+      <script src="js/daterangepicker.js"></script>
+     
+      <script>
+         $(document).ready(function(){
+           $('.dataTables-example').DataTable(                       );
+           /* Init DataTables */
+           
+                            
+         }
+                          );
+         
+      </script>
+      <script src="js/scrollbar.js"></script>
+      <script type="text/javascript">
+         jQuery(document).ready(function(){
+         jQuery('.scrollbar-inner').scrollbar();
+         });
+         
+      </script>
+   </body>
+</html>

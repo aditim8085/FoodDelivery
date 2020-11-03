@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <style>
+	  body{
+	  font-family: Arial, Helvetica, sans-serif;
+	  	font-size: 12px;
+	  	padding: 0px;
+	  	margin: 0px;
+	  }
+	  p{
+	  	margin: 0px;
+	  	padding: 0px;
+	  }
+                .printview-order-inner table p{ margin-bottom: 0px;}
+                .printview-order-inner table tr td{     border: none;}
+                .printview-order-inner table tr td{     display: inline-table;}
+                .printview-order-inner table tr td:first-child{ min-width: 150px;}
+                .printview-order-inner .sub_title{    border-bottom: 1px solid #ccc;    padding-bottom: 5px; font-size: 20px;}
+                #printpreview .modal-small{width: 720px;}
+                .total_box .tbl_view {    width: 100%;    margin-bottom: 0px;     min-width: 220px;}
+                .tbl_view {    display: table;    padding: 0px;    margin: 0;    border-collapse: collapse; width: 100%;}
+                .tbl_view li {    display: table-row; text-align: left;}
+                .total_box .tbl_view li {    border-top: 1px solid #ccc;}
+                .total_box .tbl_view li:first-child {    border-top: 0px;}
+                .tbl_view li .td {    display: table-cell;    padding: 4px 10px;    vertical-align: middle;}
+                .total_box .tbl_view li .td {    padding: 3px 3px;}
+                .total_box .total {    color: #fff;}
+                .printview-order-inner .sub_title button{    float: right;    margin-top: -15px;}
+                .printleft{ float: right;   margin-top: -15px;}
+                .total_box .tbl_view li .td.lbl{ text-align: right}
+                .printview-order-inner.order_details{    background: #e8fff8; padding: 10px;}
+                .printview-order-inner.order_details table{ margin-bottom: 30px}
+                .innerpricing tr td{ padding: 5px 2px}
+                .ing .tbl_view li span{padding: 4px 4px;}
+                .ing .tbl_view li span.td.lbl{text-align: right;}
+                .overallTable th, .overallTable td{ text-align: center;}
+
+                .printview-order-inner.assigndeliverboy{     background: #f5f5f5;    padding: 10px;    position: relative;    margin-bottom: 20px;
+                display: inline-block;    width: 100%;        border-radius: 3px;    border: 1px solid #e2e1e1;}
+                .printview-order-inner.assigndeliverboy table{ margin-bottom: 0px;}
+                .printview-order-inner .sub_title{ width: 100%; display: inline-block;}
+                .assigndeliverboy.printview-order-inner .sub_title button{ margin-top: 0px;float: right;}
+                .assigndeliverboy.printview-order-inner .sub_title{    line-height: 42px; color: #333}
+                .printview-order-inner.assigndeliverboy.offlinedel { background: #fde6e6}
+                .printview-order-inner.assigndeliverboy.onlinedel{ background: #e8f9eb}
+                .nodleiveryboy{    text-align: center;    background: #fde6e6;    padding: 16px;    border: 1px solid #ccc;    margin-bottom: 24px;}
+                .nodleiveryboy p{    margin-bottom: 0px;    font-size: 16px;    font-weight: bold;    line-height: 35px;    color: #333;}
+
+                </style> 
+</head>
+<body>
+ <div class="modal-dialog modal-small">
+        <div class="modal-content">
+            <div class="modal-header">
+                   <img src="img/logo135px.png">
+                <!-- <button type="button" class="close" data-dismiss="modal">×</button> -->
+                <!-- <h4 class="modal-title" style="font-size: 24px; padding: 0px; margin: 0px;">Order Details</h4> -->
+            </div><!--modal-header-->
+            
+            <div class="modal-body">
+
+<!-- <button style="" id="printdel" class="btn printleft" onclick="printDiv('printableArea')"><i class="fa fa-print"></i>Print</button> -->
+    <div class="printview-order" id="printableArea"> 
+         <div class="printview-order-inner">
+          
+            <table class="table">
+                <tbody>
+                     <tr>
+                        <td>
+                            <p>Invocie Number :</p>
+                        </td>
+                        <td>
+                            <b><p>150025000</p></b>
+                        </td> 
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+        <div class="printview-order-inner">
+            <h3 class="sub_title">Customer Details</h3> 
+            <table class="table">
+                <tbody>
+                    
+                    <tr>
+                        <td>
+                            <p>Full Name :</p>
+                        </td>
+                        <td>
+                            <b><p>Shagul</p></b>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Mobile :</p>
+                        </td>
+                        <td>
+                            <b><p>9876543210</p></b>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Address :</p>
+                        </td>
+                        <td>
+                            <b>
+                                <p>Chinmaya School Main Block, Arun Nagar, Coimbatore, Tamil Nadu 641041, India,   - 641041. Additional Info: ,</p>
+                                <p>Coimbatore,</p>
+                                <p>India.</p>
+                            </b>
+                        </td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+       
+       
+        <div class="printview-order-inner">
+            <h3 class="sub_title">Branch Details</h3>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Name :</p>
+                        </td>
+                        <td>
+                            <b><p>Ontabee</p></b>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Mobile :</p>
+                        </td>
+                        <td>
+                            <b><p>08000096010</p></b>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Contact Email :</p>
+                        </td>
+                        <td>
+                            <b><p>demo@ontabee.com</p></b>
+                        </td> 
+                    </tr>
+                    
+                                        <tr>
+                        <td>
+                            <p>Address :</p>
+                        </td>
+                        <td>
+                            <b>
+                                <p>2/3 &amp; 2/4 JV Building,</p>
+                                                                    <p>Mullai Nagar,,</p>
+                                                                                                    <p>Coimbatore,</p>
+                                                                                                    <p>India.</p>
+                                                            </b>
+                        </td> 
+                    </tr>
+                     
+
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="printview-order-inner order_details">
+            <h3 class="sub_title">Order Details</h3>
+            <table class="table ">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>Order ID :</p>
+                        </td>
+                        <td>
+                            <b><p>0000002</p></b>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Order Date :</p>
+                        </td>
+                        <td>
+                            <b><p>15/05/2020 10:55 AM</p></b>
+                        </td> 
+                    </tr>
+                                        <tr>
+                        <td>
+                            <p>Order Type :</p>
+                        </td>
+                        <td>
+                            <b><p>Delivery</p></b>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Payment Option :</p>
+                        </td>
+                        <td>
+                            <b><p>COD</p></b>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Payment Status :</p>
+                        </td>
+                        <td>
+                            <b><p>Success</p></b>
+                        </td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- overall total table -->
+
+        <div class="overallTable">
+            <table class="table table-striped table-bordered" style="width: 100%;">
+                <thead>
+                    <tr><th>S.No.</th>
+                        <th>Item Name</th>
+                        <th>Qty</th>
+                        <th>Price (INR)</th>
+                        <th>Variety - Price (INR)</th>
+                    </tr></thead>
+                    <tbody>
+                                                            <tr>
+                                        <td class="s_no">1</td>
+                                        <td>Goat Meat</td>
+                                        <td>1</td>
+                                        <td>0.000</td>
+                                        <td class="ing">
+                                            <ul class="tbl_view">
+                                                                                        <li>
+                                                    <span class="td">  1 Kg , 2 kg (Sub Course) </span>
+                                                    <span class="td lbl"> INR 30.000  </span>
+                                                </li>
+                                                                                            </ul>
+                                        </td>
+                                    </tr>
+                                                                                                        
+                                                            
+                                                                 
+                                                <tr class="total_box">
+                            <td colspan="4"></td>
+                            <td>
+                                <ul class="tbl_view">
+                                    <li>
+                                        <span class="td">Subtotal</span>
+                                        <span class="td lbl">INR 30.000</span>
+                                    </li>
+                                    <!--<li>
+                                        <span class="td">Delivery Fee</span>
+                                        <span class="td lbl"> </span>
+                                    </li>-->
+                                    <li>
+                                        <span class="td">Offer Value</span>
+                                        <span class="td lbl">INR 0.000</span>
+                                    </li>
+                                                                                <li>
+                                        <span class="td">Loyalty Value</span>
+                                        <span class="td lbl">INR 0.000</span>
+                                    </li>
+                                                                    <li>
+                                        <span class="td">
+
+                                                                          
+                                  Tax (0%) :
+
+
+
+                                        </span>
+                                        <span class="td lbl">INR 7.200</span>
+                                    </li>
+                                    <li>
+                                                                            <span class="td">Delivery Fee</span>
+                                        <span class="td lbl">INR 10.000</span>
+                                    </li>
+                                                                                                        
+                                    <li class="total">
+                                        <span class="td">Total</span>
+                                        <span class="td lbl">INR 47.200</span>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                                                <tr>
+                            <td colspan="2" style="text-align: left;">
+                                <b>Allergy?</b>
+                            </td>
+                            <td colspan="3" style="text-align:left;">
+                                <span>
+                                                                        <b style="color:#ffffff;background-color:#ff0000;">Yes</b>
+                                                                    </span>
+                            </td>
+                        </tr>
+                                                <tr>
+                            <td colspan="2" style="text-align: left;">
+                                <b>Order Comments:</b>
+                            </td>
+                            <td colspan="3" style="text-align:left;">
+                                <span> </span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+          
+            </div></div><!--modal-body-->
+            
+          <!--   <div class="modal-footer">
+                                <button class="btn grey" data-dismiss="modal">Close</button>
+                <button style="display: none;" class="btn" onclick="printDiv('printableArea')"><i class="fa fa-print"></i>Print</button>
+            </div --><!--modal-footer-->
+        </div><!--modal-content-->
+    </div>
+</body>
+</html>
